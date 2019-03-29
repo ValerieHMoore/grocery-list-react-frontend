@@ -21,8 +21,11 @@ export default class ItemsContainer extends Component {
             <div>
                 <ul>
                     {this.state.items.map(item => (
-                        <div>
+                        <div key={item.id}>
                             <p>Name: {item.name}</p>
+                            <p>Quantity: {item.quantity}</p>
+                            <p>Variety: {item.variety}</p>
+                            <br></br>
                         </div>
                     ))}
                 </ul>
