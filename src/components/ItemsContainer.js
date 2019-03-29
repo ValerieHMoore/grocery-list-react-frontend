@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
-
-export default class ItemsContainer extends Component {
+class ItemsContainer extends Component {
     state = {
         items: []
     }
@@ -15,13 +15,13 @@ export default class ItemsContainer extends Component {
     }
 
     render() {
-        if (this.state.items.length === 0) {
+        if (this.props.items.length === 0) {
             return <h1>Loading...</h1>
         }
         return (
             <div>
                 <ul>
-                    {this.state.items.map(item => (
+                    {this.props.items.map(item => (
                         <div key={item.id}>
                             <p>Name: {item.name}</p>
                             <p>Quantity: {item.quantity}</p>
@@ -35,3 +35,10 @@ export default class ItemsContainer extends Component {
     }
 }
 
+const mapStateToProps = state => {
+    return {
+        items: state.items
+    }
+}
+
+export default connect(mapStateToProps)(ItemsContainer)
