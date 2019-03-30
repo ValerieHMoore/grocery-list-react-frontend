@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { fetchItems } from '../redux/actions/itemsActions'
 
 class ItemsContainer extends Component {
     state = {
@@ -7,7 +8,7 @@ class ItemsContainer extends Component {
     }
 
     componentDidMount() {
-
+        this.props.fetchItems()
     }
 
     render() {
@@ -37,4 +38,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(ItemsContainer)
+export default connect(mapStateToProps, { fetchItems })(ItemsContainer)
