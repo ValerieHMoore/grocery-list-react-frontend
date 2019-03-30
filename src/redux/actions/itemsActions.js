@@ -5,3 +5,4 @@ export const fetchItems = () => dispatch => {
         dispatch({ type: 'FETCH_ITEMS_SUCCESS', payload: items })
     )
 }
+
