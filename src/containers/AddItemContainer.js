@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import AddItem from '../components/AddItem'
 
 class AddItemContainer extends Component {
 
