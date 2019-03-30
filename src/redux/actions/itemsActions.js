@@ -16,3 +16,8 @@ export const addItem = (item) => dispatch => {
     })
     .then(item => dispatch({ type: 'ADD_ITEM_SUCCESS', payload: item }))
 }
+
+export const fetchItem = (itemId) => dispatch => {
+    return fetch(`http://localhost:3001/items/${item.id}`)
+    .then(item => dispatch({ type: 'FETCH_ITEM_SUCCESS', payload: item }))
+}
