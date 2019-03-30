@@ -27,7 +27,7 @@ class AddItemContainer extends Component {
         
     render() {
         return (
-            <AddItem input={this.state} handleSubmit={this.handleSubmit} handleChange={this.handleChange}/>
+            <AddItem name={this.state.name} quantity={this.state.quantity} handleSubmit={this.handleSubmit} handleChange={this.handleChange}/>
         )}
     }
         

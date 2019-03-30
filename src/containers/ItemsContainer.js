@@ -4,10 +4,7 @@ import { fetchItems } from '../redux/actions/itemsActions'
 import { Link } from 'react-router-dom'
 
 class ItemsContainer extends Component {
-    state = {
-        items: []
-    }
-
+    
     componentDidMount() {
         this.props.fetchItems()
     }
