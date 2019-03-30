@@ -21,7 +21,9 @@ class ItemsContainer extends Component {
                 <ul>
                     {this.props.items.map(item => (
                         <div key={item.id}>
-                            <p>{item.variety} {item.name} - {item.quantity}</p>
+                            <ul>
+                                <li>{item.name} - {item.quantity}</li>
+                            </ul>
                         </div>
                     ))}
                 </ul>
