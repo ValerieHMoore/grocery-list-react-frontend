@@ -1,6 +1,6 @@
 .App {
-  color: white;
-  background-image: url(./groceryPhoto.jpg);
+  /* color: red; */
+  background-image: url(./shoppingCart.jpg);
   background-size: cover;
 }
 
