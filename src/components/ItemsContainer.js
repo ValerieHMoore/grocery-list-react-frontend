@@ -17,13 +17,11 @@ class ItemsContainer extends Component {
         }
         return (
             <div>
+                <h1>Grocery List</h1>
                 <ul>
                     {this.props.items.map(item => (
                         <div key={item.id}>
-                            <p>Name: {item.name}</p>
-                            <p>Quantity: {item.quantity}</p>
-                            <p>Variety: {item.variety}</p>
-                            <br></br>
+                            <p>{item.variety} {item.name} - {item.quantity}</p>
                         </div>
                     ))}
                 </ul>
