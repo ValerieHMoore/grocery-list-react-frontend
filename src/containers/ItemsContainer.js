@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchItems } from '../redux/actions/itemsActions'
+import { Link } from 'react-router-dom'
 
 class ItemsContainer extends Component {
     state = {
@@ -18,15 +19,16 @@ class ItemsContainer extends Component {
         return (
             <div>
                 <h1>Grocery List</h1>
-                <ul>
-                    {this.props.items.map(item => (
-                        <div key={item.id}>
-                            <ul>
-                                <li>{item.name} - {item.quantity}</li>
-                            </ul>
-                        </div>
-                    ))}
-                </ul>
+                <Link to="/items/new/item"><button type="button">Add Item</button></Link>
+                    <ul>
+                        {this.props.items.map(item => (
+                            <div key={item.id}>
+                                <ul>
+                                    <li>{item.name} - {item.quantity}</li>
+                                </ul>
+                            </div>
+                        ))}
+                    </ul>
             </div>
         )
     }
