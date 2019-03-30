@@ -1,4 +1,10 @@
 .App {
+  color: white;
+  background-image: url(./groceryPhoto.jpg);
+  background-size: cover;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -30,4 +36,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
