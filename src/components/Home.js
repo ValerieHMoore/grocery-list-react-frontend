@@ -1,3 +1,4 @@
 import React from 'react'
+import Header from './Header'
 
-export default () => <h1>Welcome to Grocery List</h1>
+export default () => <Header>Welcome to Grocery List</Header>
