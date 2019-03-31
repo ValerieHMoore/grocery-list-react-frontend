@@ -18,8 +18,6 @@ class ItemsContainer extends Component {
             <div>
                 <h1>Grocery List</h1>
                 <Link to="/items/new/item"><button type="button">Add Item</button></Link>
-                {this.props.bills.map((b) =>
-                        <ListGroup.Item key={b.id}><Link to={`/bills/${b.id}`} ><Bills name={b.name}/></Link></ListGroup.Item> )}
                     {this.props.items.map(item => (
                         <div key={item.id}>
                             <ul>
