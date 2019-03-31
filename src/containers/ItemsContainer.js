@@ -13,19 +13,18 @@ class ItemsContainer extends Component {
         if (this.props.items.length === 0) {
             return <h1>Loading...</h1>
         }
-        return (
+                
+            return (
             <div>
                 <h1>Grocery List</h1>
                 <Link to="/items/new/item"><button type="button">Add Item</button></Link>
-                    <ul>
-                        {this.props.items.map(item => (
-                            <div key={item.id}>
-                                <ul>
-                                    <li>{item.name} - {item.quantity}</li>
-                                </ul>
-                            </div>
-                        ))}
-                    </ul>
+                    {this.props.items.map(item => (
+                        <div key={item.id}>
+                            <ul>
+                                <li>{item.name} - {item.quantity}</li>
+                            </ul>
+                        </div>
+                    ))} 
             </div>
         )
     }
@@ -33,7 +32,7 @@ class ItemsContainer extends Component {
 
 const mapStateToProps = state => {
     return {
-        items: state.items
+        items: state.items.items
     }
 }
 
