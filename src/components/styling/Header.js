@@ -6,6 +6,7 @@ const Header = styled.div`
     padding-bottom: 10px;
     font-weight: bold;
     color: darkgreen;
+    margin-left: 24px;
 `;
 
 export default Header
