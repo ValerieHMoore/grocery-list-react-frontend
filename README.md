@@ -1,4 +1,4 @@
-## Grocery List
+# Grocery List
 
 Don't leave your list at home! Welcome to Grocery List, an app that helps you keep track of what you need at the supermarket.
 
