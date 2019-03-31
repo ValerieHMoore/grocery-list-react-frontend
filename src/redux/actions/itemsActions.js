@@ -19,5 +19,6 @@ export const addItem = (item) => dispatch => {
 
 export const fetchItem = (itemId) => dispatch => {
     return fetch(`http://localhost:3001/items/${itemId}`)
+    .then(resp => resp.json())
     .then(item => dispatch({ type: 'FETCH_ITEM_SUCCESS', payload: item }))
 }
