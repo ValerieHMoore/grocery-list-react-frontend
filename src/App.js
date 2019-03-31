@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Home from './components/Home'
-import Wrapper from './components/Wrapper'
+import Wrapper from './components/styling/Wrapper'
 import ItemsContainer from './containers/ItemsContainer'
 import AddItemContainer from './containers/AddItemContainer'
 import ItemContainer from './containers/ItemContainer'

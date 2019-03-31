@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from '../shoppingCart.jpg';
+import img from './shoppingCart.jpg';
 
 const Wrapper = styled.div`
     font-family: Georgia;

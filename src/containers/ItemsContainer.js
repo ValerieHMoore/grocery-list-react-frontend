@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchItems } from '../redux/actions/itemsActions'
 import { Link } from 'react-router-dom'
-import Button from '../components/Button'
-import Header from '../components/Header'
+import Button from '../components/styling/Button'
+import Header from '../components/styling/Header'
 
 class ItemsContainer extends Component {
     
