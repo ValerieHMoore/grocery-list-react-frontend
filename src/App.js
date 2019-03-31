@@ -14,7 +14,7 @@ class App extends Component {
           <Route exact path='/' component={Home} />
           <Route exact path='/items' component={ItemsContainer} />
           <Route exact path="/items/new/item" component={AddItemContainer} />
-          <Route exact path='/items/:id' component={ItemContainer} />
+          <Route exact path={`/items/:itemId`} component={ItemContainer} />
         </div>
       </Router>
     );
