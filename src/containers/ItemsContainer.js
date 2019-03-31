@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchItems } from '../redux/actions/itemsActions'
 import { Link } from 'react-router-dom'
+import Button from '../components/Button'
 
 class ItemsContainer extends Component {
     
@@ -17,7 +18,7 @@ class ItemsContainer extends Component {
             return (
             <div>
                 <h1>Grocery List</h1>
-                <Link to="/items/new/item"><button type="button">Add Item</button></Link>
+                <Link to="/items/new/item"><Button type="button">Add Item</Button></Link>
                     {this.props.items.map(item => (
                         <div key={item.id}>
                             <ul>
